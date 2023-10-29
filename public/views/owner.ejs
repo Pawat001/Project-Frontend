@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buyer</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <h1>View buyer</h1>
+    <table class="car-table">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td><%= owner.name %></td>
+            <td><%= owner.age %></td>
+        </tr>
+    </table>
+    <div class="link-center">
+        <a href="/update2/<%= owner.id %>">Edit</a>
+        <a href="/delete2/<%= owner.id %>">Delete</a>
+        <a href="/owners">Back to List</a>
+        <a href="/">Home</a>
+    </div>
+</body>
+</html>

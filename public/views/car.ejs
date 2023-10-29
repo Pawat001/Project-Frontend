@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>car</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <h1>View car</h1>
+    <table class="car-table">
+        <tr>
+            <th>make</th>
+            <th>model</th>
+            <th>year</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td><%= car.make %></td>
+            <td><%= car.model %></td>
+            <td><%= car.year %></td>
+            <td><%= car.price %></td>
+        </tr>
+    </table>
+    <div class="link-center">
+        <a href="/update1/<%= car.id %>">Edit</a>
+        <a href="/delete1/<%= car.id %>">Delete</a>
+        <a href="/cars">Back to List</a>
+        <a href="/">Home</a>
+    </div>
+</body>
+</html>

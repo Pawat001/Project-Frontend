@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buyer</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <h1>Buyers</h1>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>Actions</th>
+        </tr>
+        <% for(var i=0; i < owners.length; i++) { %>
+        <tr>
+            <td><%= owners[i].name %></td>
+            <td><%= owners[i].age %></td>
+            <td>
+                <a href="/owner/<%= owners[i].id %>">View</a>
+                <a href="/update2/<%= owners[i].id %>">Edit</a>
+                <a href="/delete2/<%= owners[i].id %>">Delete</a>
+            </td> 
+        </tr>
+        <% } %>
+    </table>
+    <a href="/create2">Create Buyer</a>
+    <a href="/">Home</a>
+</body>
+</html>
