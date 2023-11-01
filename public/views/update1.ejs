@@ -8,16 +8,16 @@
     <h1>Update Car</h1>
     <form method="post" action="/update1/<%= car.id %>">
         <label for="make">Make</label>
-        <input type="text" id="make" name="make">
+        <input type="text" id="make" name="make" value="<%= car.make %>">
         <br>
         <label for="model">Model</label>
-        <input type="text" id="model" name="model">
+        <input type="text" id="model" name="model" value="<%= car.model %>">
         <br>
         <label for="year">Year</label>
-        <input type="text" id="year" name="year">
+        <input type="text" id="year" name="year" value="<%= car.year %>">
         <br>
         <label for="price">Price</label>
-        <input type="text" id="price" name="price">
+        <input type="text" id="price" name="price" value="<%= car.price %>">
         <br>
         <input type="submit" value="Update">
     </form>

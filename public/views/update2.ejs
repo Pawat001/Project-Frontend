@@ -8,10 +8,10 @@
     <h1>Update Buyer</h1>
     <form method="post" action="/update2/<%= owner.id %>">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" value="<%= owner.name %>">
         <br>
         <label for="age">Age</label>
-        <input type="text" id="age" name="age">
+        <input type="text" id="age" name="age" value="<%= owner.age %>">
         <br>
         <input type="submit" value="Update">
     </form>
